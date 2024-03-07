@@ -1,0 +1,9 @@
+root = true
+
+[*]
+indent_style = space #tipo de indentação
+indent_size = 2 #tamanho da indentação
+end_of_line = lf #formatação do final da linha, lf tem maior compatibilidade entre os SO
+charset = utf-8 #formatação dos caracteres
+trim_trailing_whitespace = true #obriga a colocar espaço depois de simbolos
+insert_final_newline = true #finaliza o arquivo com uma linha em branco
