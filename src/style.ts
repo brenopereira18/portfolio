@@ -1,0 +1,21 @@
+import { createGlobalStyle } from "styled-components";
+
+export const colors = {
+    text: '#ecfcff'
+}
+
+export const GlobalStyle = createGlobalStyle`
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: "Montserrat", sans-serif; 
+    }
+
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+`;
