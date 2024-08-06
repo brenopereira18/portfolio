@@ -4,11 +4,9 @@ import { colors } from "../../style";
 export const Container = styled.div`
   background-color: ${colors.black};
   color: ${colors.text};
-  padding-bottom: 100px;
 
   h2 {
     text-align: center;
-    margin-bottom: 60px;
   }
 
   &::before {
@@ -20,8 +18,8 @@ export const Container = styled.div`
   }
 `;
 
-export const ListSkills = styled.div`
+export const SectionProjects = styled.div`
+  padding: 80px 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 `;

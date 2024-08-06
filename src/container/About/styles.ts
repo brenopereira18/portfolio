@@ -5,7 +5,15 @@ export const Container = styled.div`
   background-color: ${colors.black};
   height: 100vh;
   color: ${colors.text};
-  padding: 80px 0;
+  padding: 100px 0;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 100px; 
+    margin-top: -100px; 
+    visibility: hidden;
+  }
 `;
 
 export const ContainerAbout = styled.div`

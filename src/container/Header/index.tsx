@@ -9,13 +9,13 @@ const Header = () => {
         </S.Title>
         <S.ItemsLink>
           <li>
-            <a>Início</a>
+            <a href="#inicio">Início</a>
           </li>
           <li>
-            <a>Habilidades técnicas</a>
+            <a href="#habilidades-tecnicas">Habilidades técnicas</a>
           </li>
           <li>
-            <a>Projetos</a>
+            <a href="#projetos">Projetos</a>
           </li>
         </S.ItemsLink>
       </div>

@@ -5,6 +5,10 @@ export const HeaderContainer = styled.div`
   background-color: #2e3840;
   color: ${colors.text};
   padding: 16px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;   
 
   div {
     display: flex;
@@ -30,6 +34,8 @@ export const ItemsLink = styled.ul`
   a {
     font-weight: 500;
     cursor: pointer;
+    color: ${colors.text};
+    text-decoration: none;
 
     &:hover {
       border-bottom: 1px solid #ecfcff;

@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export const colors = {
-    text: '#ecfcff',
-    black: '#191825'
-}
+  text: "#ecfcff",
+  black: "#191825",
+};
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -12,6 +12,14 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         list-style: none;
         font-family: "Montserrat", sans-serif; 
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        padding-top: 80px;
     }
 
     .container {

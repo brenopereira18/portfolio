@@ -61,7 +61,7 @@ const skills = [
 
 const TechnicalSkills = () => {
   return (
-    <S.Container>
+    <S.Container id="habilidades-tecnicas">
       <div className="container">
         <h2>Técnologias</h2>
         <S.ListSkills>
