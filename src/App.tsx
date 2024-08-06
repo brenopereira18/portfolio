@@ -1,5 +1,6 @@
 import About from "./container/About";
 import Header from "./container/Header";
+import TechnicalSkills from "./container/TechnicalSkills";
 import { GlobalStyle } from "./style";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <About />
+      <TechnicalSkills />
     </>
   );
 }

@@ -12,6 +12,9 @@ const Header = () => {
             <a>Início</a>
           </li>
           <li>
+            <a>Habilidades técnicas</a>
+          </li>
+          <li>
             <a>Projetos</a>
           </li>
         </S.ItemsLink>

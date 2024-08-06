@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { colors } from "../../style";
 
 export const Container = styled.div`
-  background-color: #191825;
+  background-color: ${colors.black};
   height: 100vh;
   color: ${colors.text};
   padding: 80px 0;
