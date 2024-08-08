@@ -1,18 +1,37 @@
+import { useEffect, useState } from "react";
 import * as S from "./styles";
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 30) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <S.HeaderContainer>
+    <S.HeaderContainer className={isScrolled ? "scrolled" : ""}>
       <div className="container">
-        <S.Title>
-          Breno<span>Pereira</span>
-        </S.Title>
+        <S.Title>Breno Pereira</S.Title>
         <S.ItemsLink>
           <li>
-            <a href="#inicio">Início</a>
+            <a href="#inicio">Home</a>
           </li>
           <li>
-            <a href="#habilidades-tecnicas">Habilidades técnicas</a>
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="#habilidades-tecnicas">Skills</a>
           </li>
           <li>
             <a href="#projetos">Projetos</a>

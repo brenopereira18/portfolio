@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import { colors } from "../../style";
 
 export const Container = styled.div`
-  background-color: ${colors.black};
+  background-color: ${colors.darkBlue};
   color: ${colors.text};
 
   h2 {
@@ -19,7 +19,7 @@ export const Container = styled.div`
 `;
 
 export const SectionProjects = styled.div`
-  padding: 80px 0;
+  padding: 80px 0 120px 0;
   display: flex;
   justify-content: space-around;
 `;

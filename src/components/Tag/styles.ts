@@ -19,7 +19,11 @@ export const ListItems = styled.ul<{ color1: string; color2: string }>`
       position: absolute;
       top: 0;
       left: 0;
-      background: linear-gradient(45deg,${(props) => props.color1}, ${(props) => props.color2});
+      background: linear-gradient(
+        45deg,
+        ${(props) => props.color1},
+        ${(props) => props.color2}
+      );
       border-radius: 1.2em;
     }
 
@@ -30,8 +34,12 @@ export const ListItems = styled.ul<{ color1: string; color2: string }>`
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(45deg, ${(props) => props.color1}, ${(props) => props.color2});
-      filter: blur(30px);
+      background: linear-gradient(
+        45deg,
+        ${(props) => props.color1},
+        ${(props) => props.color2}
+      );
+      filter: blur(10px);
     }
 
     span {
@@ -46,13 +54,17 @@ export const ListItems = styled.ul<{ color1: string; color2: string }>`
     }
 
     li {
-      position: relative;      
+      position: relative;
       z-index: 10;
       width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: space-around;
+
+      p {
+        margin: 0;
+      }
     }
   }
 `;

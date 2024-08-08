@@ -16,12 +16,21 @@ export const CardContainer = styled.div`
     margin-bottom: 8px;
   }
 
+  h3 {
+    color: ${colors.white};
+  }
+
   p {
-    margin: 8px 0;
+    margin: 8px 0 16px 0;
+  }
+
+  h5 {
+    color: ${colors.white};
   }
 
   span {
     font-weight: 400;
+    color: ${colors.text};
   }
 `;
 
@@ -79,7 +88,7 @@ export const SectionLinks = styled.ul`
   }
 
   a {
-    color: ${colors.text};
+    color: ${colors.white};
     text-decoration: none;    
     pointer-events: auto;
   }

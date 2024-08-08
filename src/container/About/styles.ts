@@ -2,16 +2,16 @@ import { styled } from "styled-components";
 import { colors } from "../../style";
 
 export const Container = styled.div`
-  background-color: ${colors.black};
+  background-color: ${colors.darkBlue};
   height: 100vh;
   color: ${colors.text};
-  padding: 100px 0;
+  padding-bottom: 100px;
 
   &::before {
     content: "";
     display: block;
     height: 100px; 
-    margin-top: -100px; 
+    margin-top: -20px; 
     visibility: hidden;
   }
 `;
@@ -25,9 +25,14 @@ export const SectionAbout = styled.div`
   p {
     margin: 32px 0;
   }
+
+  h2 {
+    color: ${colors.white};
+  }
 `;
 
 export const Button = styled.a`
+  color: ${colors.white};
   max-width: 180px;
   width: 100%;
   cursor: pointer;
@@ -36,8 +41,7 @@ export const Button = styled.a`
   align-items: center;
   font-weight: 500;
   font-size: 17px;
-  padding: 0.8em 1.5em 0.8em 1.2em;
-  color: ${colors.text};
+  padding: 0.8em 1.2em 0.8em 1.2em;  
   background: #ad5389;
   background: linear-gradient(
     0deg,
@@ -59,18 +63,15 @@ export const Button = styled.a`
 `;
 
 export const Section = styled.div`
-  text-align: center;
-
-  img {
-    border-radius: 50%;
-    max-width: 260px;
+  
+  iframe {
+    max-width: 400px;
     width: 100%;
+    max-height: 300px;
+    height: 100%;
+    border: none;  
   }
-
-  h3 {
-    margin: 12px 0;
-    font-weight: 400;
-  }
+  
 `;
 
 export const ListIcons = styled.ul`

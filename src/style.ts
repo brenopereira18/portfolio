@@ -1,8 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 export const colors = {
-  text: "#ecfcff",
-  black: "#191825",
+  white: "#FFFFFF",
+  text: "#BCBAC4",
+  darkBlue: "#021526",
+  gray: "#EFECEC",
+  purple: "#864af9",
+  blue: " #3572ef",
 };
 
 export const GlobalStyle = createGlobalStyle`
@@ -17,10 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     html {
         scroll-behavior: smooth;
     }
-
-    body {
-        padding-top: 80px;
-    }
+    
 
     .container {
         max-width: 1024px;

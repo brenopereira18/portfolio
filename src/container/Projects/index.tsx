@@ -18,7 +18,7 @@ const projects = [
 const Project = () => {
   return (
     <Container id="projetos">
-      <div className="container">
+      <div className="container" data-aos="fade-left">
         <h2>Projetos</h2>
         <SectionProjects>
           {projects.map((project) => (

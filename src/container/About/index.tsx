@@ -1,12 +1,15 @@
-import myPhoto from "../../assets/myPhoto.jpeg";
+import myPhoto from "../../assets/myPhoto.png";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { BsDownload } from "react-icons/bs";
 import * as S from "./styles";
 
 const About = () => {
   return (
-    <S.Container id="inicio">
-      <S.ContainerAbout className="container">
+    <S.Container id="sobre">
+      <S.ContainerAbout className="container" data-aos="fade-left">
+        <S.Section>
+          <iframe src="https://lottie.host/embed/f74654dd-6f14-405a-9edd-bcb17520d4c1/uKetNZafbe.json"></iframe>
+        </S.Section>
         <S.SectionAbout>
           <h2>Sobre mim</h2>
           <p>
@@ -27,27 +30,6 @@ const About = () => {
             <BsDownload />
           </S.Button>
         </S.SectionAbout>
-        <S.Section>
-          <img src={myPhoto} alt="Foto de Breno Pereira" />
-          <h3>Desenvolvedor Fullstack</h3>
-          <S.ListIcons>
-            <li>
-              <a>
-                <AiFillGithub size={32} />
-              </a>
-            </li>
-            <li>
-              <a>
-                <AiFillLinkedin size={32} />
-              </a>
-            </li>
-            <li>
-              <a>
-                <AiOutlineMail size={32} />
-              </a>
-            </li>
-          </S.ListIcons>
-        </S.Section>
       </S.ContainerAbout>
     </S.Container>
   );
