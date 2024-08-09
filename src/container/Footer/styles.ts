@@ -10,8 +10,7 @@ export const ContainerFooter = styled.div`
   display: flex;  
   justify-content: space-around;
   column-gap: 80px;
-  color: ${colors.white};
-  margin-bottom: 62px;
+  color: ${colors.white};  
 
   h2 {
     margin-bottom: 8px;
@@ -42,6 +41,7 @@ export const MadeByMe = styled.p`
   font-size: 13px;
   color: ${colors.white};
   text-align: center;
+  margin-top: 62px;
 `
 
 export const Email = styled.div`

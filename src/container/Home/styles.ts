@@ -1,31 +1,49 @@
 import { styled } from "styled-components";
-import { colors } from "../../style";
+import { breakpoints, colors } from "../../style";
 
 export const Container = styled.div`
   background-color: ${colors.darkBlue};
   height: 100vh;
-  color: ${colors.text};
-  padding: 100px 0;
+  color: ${colors.gray};
+  padding: 100px 0 160px 0;  
+
+  @media (max-width: ${breakpoints.tablet}) {
+    height: auto; 
+    padding: 80px 0 120px 0; 
+  }
 `;
 
 export const ContainerHome = styled.div`
   width: 100%;
-  height: 100%;
+  padding-top: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-top: 60px;
+    justify-content: center;
+  }
 `;
 
 export const Presentation = styled.div`
   h2 {
     font-size: 32px;
     color: ${colors.white};
+
+    @media (max-width: ${breakpoints.tablet}) {
+      font-size: 28px;
+    }
   }
 
   p {
     margin: 6px 0 30px 0;
     font-size: 18px;
     font-weight: 500;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -39,7 +57,7 @@ export const Button = styled.div`
   align-items: center;
   font-weight: 500;
   font-size: 17px;
-  padding: 0.8em 1.2em 0.8em 1.2em;  
+  padding: 0.8em 1.2em 0.8em 1.2em;
   color: ${colors.white};
   background: #ad5389;
   background: linear-gradient(
@@ -64,12 +82,21 @@ export const Button = styled.div`
     color: ${colors.white};
     text-decoration: none;
   }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 15px;
+    padding: 0.6em 1em;
+  }
 `;
 
 export const Scroll = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-top: 20px;  
+  }
 
   span {
     font-size: 13px;

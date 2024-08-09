@@ -25,7 +25,7 @@ const About = () => {
             escaláveis e de alto desempenho, atendendo às necessidades
             específicas de cada projeto.
           </p>
-          <S.Button>
+          <S.Button href="/CV/Curriculo_BrenoPereira.pdf" download="Curriculo_BrenoPereira.pdf">
             Baixar CV
             <BsDownload />
           </S.Button>

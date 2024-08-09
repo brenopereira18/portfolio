@@ -20,8 +20,8 @@ const Header = () => {
   }, []);
 
   return (
-    <S.HeaderContainer className={isScrolled ? "scrolled" : ""}>
-      <div className="container">
+    <S.Container className={isScrolled ? "scrolled" : ""}>
+      <S.ContainerHeader className="container">
         <S.Title>Breno Pereira</S.Title>
         <S.ItemsLink>
           <li>
@@ -37,8 +37,8 @@ const Header = () => {
             <a href="#projetos">Projetos</a>
           </li>
         </S.ItemsLink>
-      </div>
-    </S.HeaderContainer>
+      </S.ContainerHeader>
+    </S.Container>
   );
 };
 

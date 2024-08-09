@@ -30,13 +30,13 @@ export const CardContainer = styled.div`
 
   span {
     font-weight: 400;
-    color: ${colors.text};
+    color: ${colors.gray};
   }
 `;
 
 export const Container = styled.div`
   font-size: 1rem;
-  color: ${colors.text};
+  color: ${colors.gray};
   background: linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
   padding: 1rem;
   border-radius: 1.2rem;
@@ -50,8 +50,8 @@ export const SectionLinks = styled.ul`
   li {
     padding: 8px 16px;
     border: 2px solid #2c2c2c;
-    background-color: #1a1a1a;    
-    font-size: .8rem;
+    background-color: #1a1a1a;
+    font-size: 0.8rem;
     cursor: pointer;
     border-radius: 30px;
     transition: all 0.4s ease;
@@ -89,8 +89,7 @@ export const SectionLinks = styled.ul`
 
   a {
     color: ${colors.white};
-    text-decoration: none;    
+    text-decoration: none;
     pointer-events: auto;
   }
 `;
-

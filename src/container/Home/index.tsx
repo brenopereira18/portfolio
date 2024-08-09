@@ -12,7 +12,7 @@ const Home = () => {
   
   return (
     <S.Container id="inicio">
-      <S.ContainerHome className="container" data-aos="fade-right">
+      <S.ContainerHome className="container">
         <S.Presentation>
           <h2>Olá, meu nome é Breno!</h2>
           <p>Desenvolvedor FullStack</p>

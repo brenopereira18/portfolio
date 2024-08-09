@@ -1,17 +1,16 @@
 import { styled } from "styled-components";
-import { colors } from "../../style";
+import { breakpoints, colors } from "../../style";
 
 export const Container = styled.div`
   background-color: ${colors.darkBlue};
-  height: 100vh;
-  color: ${colors.text};
-  padding-bottom: 100px;
+  color: ${colors.gray};
+  padding-bottom: 160px;  
 
   &::before {
     content: "";
     display: block;
-    height: 100px; 
-    margin-top: -20px; 
+    height: 100px;
+    margin-top: -20px;
     visibility: hidden;
   }
 `;
@@ -24,6 +23,10 @@ export const ContainerAbout = styled.div`
 export const SectionAbout = styled.div`
   p {
     margin: 32px 0;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      font-size: 14px;
+    }
   }
 
   h2 {
@@ -41,7 +44,7 @@ export const Button = styled.a`
   align-items: center;
   font-weight: 500;
   font-size: 17px;
-  padding: 0.8em 1.2em 0.8em 1.2em;  
+  padding: 0.8em 1.2em 0.8em 1.2em;
   background: #ad5389;
   background: linear-gradient(
     0deg,
@@ -52,6 +55,7 @@ export const Button = styled.a`
   box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
   letter-spacing: 0.05em;
   border-radius: 20em;
+  text-decoration: none;
 
   &:hover {
     box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
@@ -63,15 +67,13 @@ export const Button = styled.a`
 `;
 
 export const Section = styled.div`
-  
   iframe {
     max-width: 400px;
     width: 100%;
     max-height: 300px;
     height: 100%;
-    border: none;  
+    border: none;
   }
-  
 `;
 
 export const ListIcons = styled.ul`

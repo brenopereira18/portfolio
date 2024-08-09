@@ -1,13 +1,13 @@
 import { styled } from "styled-components";
-import { colors } from "../../style";
+import { breakpoints, colors } from "../../style";
 
-export const HeaderContainer = styled.div`
+export const Container = styled.div`
   background-color: ${colors.darkBlue};
-  color: ${colors.text};
+  color: ${colors.gray};
   padding: 20px 0;
   position: fixed;
-  top: 0;
   width: 100%;
+  top: 0;
   z-index: 1000;
   transition: background 0.3s ease-in-out;
 
@@ -15,11 +15,16 @@ export const HeaderContainer = styled.div`
     box-shadow: 0 2px 2px -2px gray;
   }
 
-  div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 100vw;
   }
+`;
+
+export const ContainerHeader = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
 `;
 
 export const Title = styled.h1`
@@ -35,14 +40,12 @@ export const ItemsLink = styled.ul`
   a {
     font-weight: 500;
     cursor: pointer;
-    color: ${colors.text};
+    color: ${colors.gray};
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
 
     &:hover {
-      color: #A084E8;
+      color: #a084e8;
     }
-
-    
   }
 `;
