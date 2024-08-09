@@ -5,9 +5,9 @@ import * as S from "./styles";
 
 const About = () => {
   return (
-    <S.Container id="sobre" data-aos="fade-left">
+    <S.Container id="sobre">
       <h2>Sobre mim</h2>
-      <S.ContainerAbout className="container" >
+      <S.ContainerAbout className="container" data-aos="fade-left">
         <S.Section>
           <iframe src="https://lottie.host/embed/f74654dd-6f14-405a-9edd-bcb17520d4c1/uKetNZafbe.json"></iframe>
         </S.Section>
