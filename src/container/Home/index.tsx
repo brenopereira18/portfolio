@@ -13,18 +13,7 @@ const Home = () => {
   return (
     <S.Container id="inicio">
       <S.ContainerHome className="container">
-        <S.Presentation>
-          <h2>Olá, meu nome é Breno!</h2>
-          <p>Desenvolvedor FullStack</p>
-          <S.Button>
-            <a href="mailto:brenopereirabetti@gmail.com">Envie-me um email</a>
-            <BsEnvelopeAt size={20} />
-          </S.Button>
-        </S.Presentation>
         <S.SectionFigures>
-          <S.ContainerImage>
-            <img src={myPhoto} alt="Foto de Breno Pereira" />
-          </S.ContainerImage>
           <S.sectionIcons>
             <a href="https://github.com/brenopereira18" target="_blank">
               <AiFillGithub size={20} />
@@ -36,7 +25,18 @@ const Home = () => {
               <FaLinkedinIn size={20} />
             </a>
           </S.sectionIcons>
+          <S.ContainerImage>
+            <img src={myPhoto} alt="Foto de Breno Pereira" />
+          </S.ContainerImage>
         </S.SectionFigures>
+        <S.Presentation>
+          <h2>Olá, meu nome é Breno!</h2>
+          <p>Desenvolvedor FullStack</p>
+          <S.Button>
+            <a href="mailto:brenopereirabetti@gmail.com">Envie-me um email</a>
+            <BsEnvelopeAt size={20} />
+          </S.Button>
+        </S.Presentation>
       </S.ContainerHome>
       <S.Scroll>
         <CiDesktopMouse2 size={22} color="#7E8EF1" />

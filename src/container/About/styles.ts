@@ -4,7 +4,7 @@ import { breakpoints, colors } from "../../style";
 export const Container = styled.div`
   background-color: ${colors.darkBlue};
   color: ${colors.gray};
-  padding-bottom: 160px;  
+  padding-bottom: 120px;
 
   &::before {
     content: "";
@@ -13,24 +13,37 @@ export const Container = styled.div`
     margin-top: -20px;
     visibility: hidden;
   }
+
+  h2 {
+    color: ${colors.white};
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  
 `;
 
 export const ContainerAbout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    grid-template-columns: 1fr;  
+  }
 `;
 
 export const SectionAbout = styled.div`
   p {
-    margin: 32px 0;
+    margin: 16px 0;
 
     @media (max-width: ${breakpoints.tablet}) {
       font-size: 14px;
+      text-align: center;
     }
-  }
 
-  h2 {
-    color: ${colors.white};
+    @media (max-width: ${breakpoints.mobile}) {
+      margin-bottom: 22px;
+    }
   }
 `;
 
@@ -64,6 +77,13 @@ export const Button = styled.a`
   &:active {
     box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 14px; 
+    padding: 0.6em 1em 0.6em 1em;
+    max-width: 160px;
+    margin: 0 auto;
+  }
 `;
 
 export const Section = styled.div`
@@ -73,6 +93,10 @@ export const Section = styled.div`
     max-height: 300px;
     height: 100%;
     border: none;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      height: 240px;  
+    }
   }
 `;
 

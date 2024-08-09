@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { colors } from "../../style";
+import { breakpoints, colors } from "../../style";
 
 export const Container = styled.div`
   background-color: ${colors.darkBlue};
@@ -23,4 +23,10 @@ export const SectionProjects = styled.div`
   padding: 80px 0 120px 0;
   display: flex;
   justify-content: space-around;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
 `;

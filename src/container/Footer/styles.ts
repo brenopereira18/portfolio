@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { colors } from "../../style";
+import { breakpoints, colors } from "../../style";
 
 export const Container = styled.div`
   padding: 48px 0;
@@ -11,6 +11,11 @@ export const ContainerFooter = styled.div`
   justify-content: space-around;
   column-gap: 80px;
   color: ${colors.white};  
+
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    row-gap: 32px;
+  }
 
   h2 {
     margin-bottom: 8px;

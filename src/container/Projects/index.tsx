@@ -12,7 +12,7 @@ const projects = [
       "Typescript | React | Redux | Styled-components | React-Router-Dom | React Toolkit Query",
     github: "https://github.com/brenopereira18/Efood",
     deploy: "https://efood-dun-beta.vercel.app/",
-  },
+  },  
 ];
 
 const Project = () => {

@@ -5,11 +5,11 @@ export const Container = styled.div`
   background-color: ${colors.darkBlue};
   height: 100vh;
   color: ${colors.gray};
-  padding: 100px 0 160px 0;  
+  padding: 100px 0 100px 0;
 
   @media (max-width: ${breakpoints.tablet}) {
-    height: auto; 
-    padding: 80px 0 120px 0; 
+    height: auto;
+    padding: 80px 0 100px 0;
   }
 `;
 
@@ -20,9 +20,9 @@ export const ContainerHome = styled.div`
   justify-content: space-around;
   align-items: center;
 
-  @media (max-width: ${breakpoints.tablet}) {
-    margin-top: 60px;
-    justify-content: center;
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    row-gap: 32px;
   }
 `;
 
@@ -34,6 +34,10 @@ export const Presentation = styled.div`
     @media (max-width: ${breakpoints.tablet}) {
       font-size: 28px;
     }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      font-size: 24px;
+    }
   }
 
   p {
@@ -44,6 +48,15 @@ export const Presentation = styled.div`
     @media (max-width: ${breakpoints.tablet}) {
       font-size: 16px;
     }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-left: 32px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    margin-right: 10px;
+    
   }
 `;
 
@@ -95,7 +108,7 @@ export const Scroll = styled.div`
   justify-content: center;
 
   @media (max-width: ${breakpoints.tablet}) {
-    margin-top: 20px;  
+    margin-top: 20px;
   }
 
   span {

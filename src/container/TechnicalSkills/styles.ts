@@ -35,4 +35,9 @@ export const ListSkills = styled.div`
   @media (max-width: ${breakpoints.tablet}) {
     justify-content: center;     
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 `;
