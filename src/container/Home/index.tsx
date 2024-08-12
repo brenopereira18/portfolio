@@ -12,7 +12,7 @@ const Home = () => {
   
   return (
     <S.Container id="inicio">
-      <S.ContainerHome className="container">
+      <S.ContainerHome className="container" data-aos="fade-right">
         <S.SectionFigures>
           <S.sectionIcons>
             <a href="https://github.com/brenopereira18" target="_blank">

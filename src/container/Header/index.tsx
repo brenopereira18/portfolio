@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
+import { CgMenu, CgFileDocument } from "react-icons/cg";
+import { BsPersonFill } from "react-icons/bs";
+import { AiFillHome } from "react-icons/ai";
+import { BsBriefcaseFill } from "react-icons/bs";
+import { IoClose } from "react-icons/io5";
 import * as S from "./styles";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 30) {
@@ -37,6 +43,28 @@ const Header = () => {
             <a href="#projetos">Projetos</a>
           </li>
         </S.ItemsLink>
+        <S.MenuNav>
+          <CgMenu size={24} onClick={() => setMenuIsOpen(true)} color="#a084e8" />
+          <S.ItemsLinkMobile className={menuIsOpen ? "is-open" : ""}>
+            <li>
+              <AiFillHome />
+              <a href="#inicio">Home</a>
+            </li>
+            <li>
+              <BsPersonFill />
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+              <CgFileDocument />
+              <a href="#habilidades-tecnicas">Skills</a>
+            </li>
+            <li>
+              <BsBriefcaseFill />
+              <a href="#projetos">Projetos</a>
+            </li>
+            <IoClose size={24} color="#a084e8" onClick={() => setMenuIsOpen(false)}/>
+          </S.ItemsLinkMobile>
+        </S.MenuNav>
       </S.ContainerHeader>
     </S.Container>
   );
