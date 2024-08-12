@@ -67,18 +67,16 @@ export const ItemsLinkMobile = styled.ul`
   position: fixed;
   top: 0; 
   left: 0;
-  height: 60px; 
+  height: 68px; 
   width: 100%; 
   background-color: ${colors.darkBlue}; 
   padding: 10px;
   z-index: 1100; 
-  transform: translateY(-100%);  /* Inicia fora da tela */
-  transition: transform 0.3s ease-in-out; /* Transição suave */
+  
 
   &.is-open {
     display: flex;
-    justify-content: space-around;
-    transform: translateY(0); /* Desce para a posição correta */
+    justify-content: space-around;    
   }
 
   li {
