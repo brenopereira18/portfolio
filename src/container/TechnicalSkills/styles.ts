@@ -2,10 +2,11 @@ import { styled } from "styled-components";
 import { breakpoints, colors } from "../../style";
 
 export const Container = styled.div`
+  width: 100%;
   background-color: ${colors.darkBlue};
   color: ${colors.gray};
   padding-bottom: 160px;
-  
+
   h2 {
     color: ${colors.white};
     text-align: center;
@@ -28,16 +29,17 @@ export const Container = styled.div`
 `;
 
 export const ListSkills = styled.div`
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   @media (max-width: ${breakpoints.tablet}) {
-    justify-content: center;     
+    justify-content: center;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;    
   }
 `;

@@ -62,7 +62,7 @@ const skills = [
 const TechnicalSkills = () => {
   return (
     <S.Container id="habilidades-tecnicas">
-      <div className="container" data-aos="fade-right">
+      <div className="container" >
         <h2>Skills</h2>
         <p>Minhas tecnologias</p>
         <S.ListSkills>

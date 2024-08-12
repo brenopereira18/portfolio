@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import { breakpoints, colors } from "../../style";
 
 export const Container = styled.div`
+  width: 100%;
   background-color: ${colors.darkBlue};
   color: ${colors.gray};
 
@@ -25,6 +26,7 @@ export const SectionProjects = styled.div`
   justify-content: space-around;
 
   @media (max-width: ${breakpoints.mobile}) {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 40px;

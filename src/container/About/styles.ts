@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import { breakpoints, colors } from "../../style";
 
 export const Container = styled.div`
+  width: 100%;
   background-color: ${colors.darkBlue};
   color: ${colors.gray};
   padding-bottom: 120px;
@@ -19,8 +20,6 @@ export const Container = styled.div`
     text-align: center;
     margin-bottom: 80px;
   }
-
-  
 `;
 
 export const ContainerAbout = styled.div`
@@ -28,7 +27,7 @@ export const ContainerAbout = styled.div`
   grid-template-columns: 1fr 1fr;
 
   @media (max-width: ${breakpoints.mobile}) {
-    grid-template-columns: 1fr;  
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -79,7 +78,7 @@ export const Button = styled.a`
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    font-size: 14px; 
+    font-size: 14px;
     padding: 0.6em 1em 0.6em 1em;
     max-width: 160px;
     margin: 0 auto;
@@ -95,7 +94,7 @@ export const Section = styled.div`
     border: none;
 
     @media (max-width: ${breakpoints.mobile}) {
-      height: 240px;  
+      height: 240px;
     }
   }
 `;

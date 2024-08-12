@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 import { breakpoints, colors } from "../../style";
 
 export const Container = styled.div`
+  width: 100%;
   background-color: ${colors.darkBlue};
   height: 100vh;
   color: ${colors.gray};
@@ -56,7 +57,6 @@ export const Presentation = styled.div`
 
   @media (max-width: ${breakpoints.mobile}) {
     margin-right: 10px;
-    
   }
 `;
 

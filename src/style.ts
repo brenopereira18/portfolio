@@ -21,11 +21,12 @@ export const GlobalStyle = createGlobalStyle`
         list-style: none;
         font-family: "Montserrat", sans-serif; 
         scrollbar-width: thin; 
-        scrollbar-color: ${colors.gray}  
+        scrollbar-color: ${colors.gray};        
     }
 
     html {
         scroll-behavior: smooth;
+        overflow-x: hidden;
     }    
 
     .container {
