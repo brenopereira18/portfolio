@@ -44,7 +44,7 @@ const Header = () => {
           </li>
         </S.ItemsLink>
         <S.MenuNav>
-          <CgMenu size={24} onClick={() => setMenuIsOpen(true)} color="#a084e8" />
+          <CgMenu size={26} onClick={() => setMenuIsOpen(true)} color="#a084e8" />
           <S.ItemsLinkMobile className={menuIsOpen ? "is-open" : ""}>
             <li>
               <AiFillHome />
@@ -62,7 +62,7 @@ const Header = () => {
               <BsBriefcaseFill />
               <a href="#projetos">Projetos</a>
             </li>
-            <IoClose size={24} color="#a084e8" onClick={() => setMenuIsOpen(false)}/>
+            <IoClose size={26} color="#a084e8" onClick={() => setMenuIsOpen(false)}/>
           </S.ItemsLinkMobile>
         </S.MenuNav>
       </S.ContainerHeader>
