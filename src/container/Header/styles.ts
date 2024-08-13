@@ -65,29 +65,34 @@ export const MenuNav = styled.div`
 export const ItemsLinkMobile = styled.ul`
   display: none;
   position: fixed;
-  top: 0; 
-  left: 0;
-  height: 68px; 
-  width: 100%; 
-  background-color: ${colors.darkBlue}; 
+  top: 0;
+  right: 0; 
+  height: 100vh; 
+  width: 30%;
+  background-color: ${colors.lightPurple};
   padding: 10px;
-  z-index: 1100; 
-  
+  z-index: 1100;  
 
   &.is-open {
     display: flex;
-    justify-content: space-around;    
+    flex-direction: column;
+    row-gap: 8px;
+    
+  }
+
+  div {    
+    margin-bottom: 8px;  
   }
 
   li {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     column-gap: 4px;
     font-weight: 500;
-    color: ${colors.white};
+    color: ${colors.darkBlue};
 
     a {
-      color: ${colors.white};
+      color: ${colors.darkBlue};
       text-decoration: none;
       font-size: 14px;
       cursor: pointer;

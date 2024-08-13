@@ -3,7 +3,7 @@ import { breakpoints, colors } from "../../style";
 
 export const Container = styled.div`
   padding: 48px 0;
-  background-color: #8576ff;
+  background-color: ${colors.lightPurple};
 `;
 
 export const ContainerFooter = styled.div`
