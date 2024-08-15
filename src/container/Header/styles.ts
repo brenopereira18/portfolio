@@ -95,7 +95,7 @@ export const ItemsLinkMobile = styled.ul`
     a {
       color: ${colors.darkBlue};
       text-decoration: none;
-      font-size: 14px;
+      font-size: 16px;
       cursor: pointer;
     }
   }

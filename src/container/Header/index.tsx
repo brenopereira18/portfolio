@@ -52,7 +52,7 @@ const Header = () => {
           <S.ItemsLinkMobile className={menuIsOpen ? "is-open" : ""}>
             <div>
               <IoClose
-                size={24}
+                size={26}
                 color="#021526"
                 onClick={() => setMenuIsOpen(false)}
               />
