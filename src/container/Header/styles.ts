@@ -68,15 +68,16 @@ export const ItemsLinkMobile = styled.ul`
   top: 0;
   right: 0; 
   height: 100vh; 
-  width: 30%;
+  width: 40%;
   background-color: ${colors.lightPurple};
   padding: 10px;
   z-index: 1100;  
+  font-size: 24px;
 
   &.is-open {
     display: flex;
     flex-direction: column;
-    row-gap: 8px;
+    row-gap: 12px;
     
   }
 
