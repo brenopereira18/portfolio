@@ -16,7 +16,7 @@ import {
   SiRedux,
   SiStyledcomponents,
 } from "react-icons/si";
-import { FaGulp, FaGitAlt } from "react-icons/fa";
+import { FaGulp, FaGitAlt, FaVuejs } from "react-icons/fa";
 import * as S from "./styles";
 import Tag from "../../components/Tag";
 
@@ -57,6 +57,7 @@ const skills = [
   },
   { name: "Gulp", icon: FaGulp, color1: "#B3005E", color2: "#FF004D" },
   { name: "Git", icon: FaGitAlt, color1: "#FFB84C", color2: "#F94C10" },
+  { name: "VueJs", icon: FaVuejs, color1: "#D5ED9F", color2: "#00712D"},
 ];
 
 const TechnicalSkills = () => {

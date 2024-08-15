@@ -35,11 +35,15 @@ export const CardContainer = styled.div`
 `;
 
 export const Container = styled.div`
+  height: 100%;
   font-size: 1rem;
   color: ${colors.gray};
   background: linear-gradient(135deg, #0d1120 0%, #3a4b8a 43%, #0d1120 100%);
   padding: 1rem;
   border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 export const SectionLinks = styled.ul`
