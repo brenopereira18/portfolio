@@ -17,7 +17,7 @@ const Footer = () => {
             <BiEnvelope  size={26}/>
             <div>
               <span>Email</span>
-              <p>brenopereirabetti@gmail.com</p>
+              <p>devbrenopereira@gmail.com</p>
             </div>
           </S.Email>
           <a

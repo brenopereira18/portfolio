@@ -33,7 +33,7 @@ const Home = () => {
           <h2>Olá, meu nome é Breno!</h2>
           <p>Desenvolvedor FullStack</p>
           <S.Button>
-            <a href="mailto:brenopereirabetti@gmail.com">Envie-me um email</a>
+            <a href="mailto:devbrenopereira@gmail.com">Envie-me um email</a>
             <BsEnvelopeAt size={20} />
           </S.Button>
         </S.Presentation>

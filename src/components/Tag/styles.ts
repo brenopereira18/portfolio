@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { breakpoints } from "../../style";
 
 export const ListItems = styled.ul<{ color1: string; color2: string }>`
   margin: 20px;
@@ -10,6 +11,10 @@ export const ListItems = styled.ul<{ color1: string; color2: string }>`
 
     &:hover {
       transform: translateY(-20px);
+
+      @media (max-width: ${breakpoints.mobile}) {
+        transform: translateY(0);
+      }
     }
 
     &::before {
