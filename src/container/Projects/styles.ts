@@ -22,8 +22,10 @@ export const Container = styled.div`
 
 export const SectionProjects = styled.div`
   padding: 80px 0 120px 0;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px;
+  justify-items: center;  
 
   @media (max-width: ${breakpoints.mobile}) {
     width: 100%;

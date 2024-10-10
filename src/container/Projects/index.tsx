@@ -1,9 +1,18 @@
 import Card from "../../components/Card";
 import efood from "../../assets/efood.png";
 import cookinUp from "../../assets/cookin-up.png";
+import Cars from "../../assets/cars.png";
 import { Container, SectionProjects } from "./styles";
 
 const projects = [
+  {
+    image: Cars,
+    name: "MultiCars",
+    description: "Este projeto é um site de gerenciamento de veículos, onde o usuário pode se cadastrar e fazer login. Após estar conectado com sua conta o usuário pode criar cadastros de carros, ver detalhes, fazer atualizações e deletar (CRUD), além de conseguir buscar determinado carro pelo nome do modelo. A aplicação também conta com uma descrição automática através da API da Gemini, caso o usuário não coloque nenhuma. O deploy foi feito na AWS., com Nginx e uWSGI",
+    technologies: "Python | Django | AWS | PostgresSQL | Nginx | uWSGI",
+    github: "https://github.com/brenopereira18/cars",
+    deploy: "http://98.83.75.45/cars/",
+  },
   {
     image: efood,
     name: "Efood",
@@ -22,7 +31,7 @@ const projects = [
     technologies: "Typescript | VueJs | Html | Css",
     github: "https://github.com/brenopereira18/cookin-up",
     deploy: "https://cookin-up-green.vercel.app/",
-  },
+  },  
 ];
 
 const Project = () => {

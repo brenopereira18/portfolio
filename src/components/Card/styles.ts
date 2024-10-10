@@ -6,11 +6,11 @@ export const CardContainer = styled.div`
   padding: 1px;
   border-radius: 1.2rem;
   box-shadow: 0px 1rem 1.5rem -0.9rem #000000e1;
-  max-width: 400px;
+  max-width: 460px;
   width: 100%;
 
   img {
-    width: 100%;
+    width: 100%;    
     max-height: 200px;
     object-fit: cover;
     margin-bottom: 8px;
