@@ -10,13 +10,12 @@ import {
   SiTypescript,
   SiBootstrap,
   SiGrunt,
-  SiDocker,
-  SiJquery,
+  SiDocker,  
   SiDjango,
   SiRedux,
   SiStyledcomponents,
 } from "react-icons/si";
-import { FaGulp, FaGitAlt, FaVuejs } from "react-icons/fa";
+import { FaGulp, FaGitAlt, FaJava } from "react-icons/fa";
 import * as S from "./styles";
 import Tag from "../../components/Tag";
 
@@ -46,7 +45,6 @@ const skills = [
   },
   { name: "Grunt", icon: SiGrunt, color1: "#FFC700", color2: "#F57D1F" },
   { name: "Docker", icon: SiDocker, color1: "#47B5FF", color2: "#1363DF" },
-  { name: "jQuery", icon: SiJquery, color1: "#E3F6FF", color2: "#1363DF" },
   { name: "Django", icon: SiDjango, color1: "#D3D04F", color2: "#005B41" },
   { name: "Redux", icon: SiRedux, color1: "#836FFF", color2: "#6420AA" },
   {
@@ -57,7 +55,7 @@ const skills = [
   },
   { name: "Gulp", icon: FaGulp, color1: "#B3005E", color2: "#FF004D" },
   { name: "Git", icon: FaGitAlt, color1: "#FFB84C", color2: "#F94C10" },
-  { name: "VueJs", icon: FaVuejs, color1: "#D5ED9F", color2: "#00712D"},
+  { name: "Java", icon: FaJava, color1: "#78B3CE", color2: "#FF7F3E" },
 ];
 
 const TechnicalSkills = () => {
