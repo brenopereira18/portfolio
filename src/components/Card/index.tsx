@@ -6,7 +6,7 @@ type Props = {
   description: string;
   technologies: string;
   github: string;
-  deploy: string;
+  deploy?: string;
 };
 
 const Card = ({
