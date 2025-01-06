@@ -10,7 +10,7 @@ export const ListItems = styled.ul<{ color1: string; color2: string }>`
     transition: 0.5s;
 
     &:hover {
-      transform: translateY(-20px);
+      transform: translateY(-10px);
 
       @media (max-width: ${breakpoints.mobile}) {
         transform: translateY(0);

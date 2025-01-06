@@ -67,7 +67,7 @@ export const ItemsLinkMobile = styled.ul`
   position: fixed;
   top: 0;
   right: 0; 
-  height: 100vh; 
+  height: 200vh; 
   width: 40%;
   background-color: ${colors.lightPurple};
   padding: 10px;

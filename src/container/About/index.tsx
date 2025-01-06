@@ -1,5 +1,3 @@
-import myPhoto from "../../assets/myPhoto.png";
-import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { BsDownload } from "react-icons/bs";
 import * as S from "./styles";
 
@@ -9,7 +7,7 @@ const About = () => {
       <h2>Sobre mim</h2>
       <S.ContainerAbout className="container">
         <S.Section>
-          <iframe src="https://lottie.host/embed/f74654dd-6f14-405a-9edd-bcb17520d4c1/uKetNZafbe.json"></iframe>
+          <iframe title="Homem mexendo no computador" src="https://lottie.host/embed/f74654dd-6f14-405a-9edd-bcb17520d4c1/uKetNZafbe.json"></iframe>
         </S.Section>
         <S.SectionAbout>
           <p>

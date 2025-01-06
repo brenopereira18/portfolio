@@ -20,7 +20,7 @@ const Card = ({
   return (
     <S.CardContainer>
       <S.Container>
-        <img src={image} />
+        <img src={image} alt={name} />
         <div>
           <h3>{name}</h3>
           <p>{description}</p>
@@ -34,11 +34,13 @@ const Card = ({
               GitHub
             </a>
           </li>
-          <li>
-            <a href={deploy} target="_blank" rel="noopener noreferrer">
-              Deploy
-            </a>
-          </li>          
+          {deploy && (
+            <li>
+              <a href={deploy} target="_blank" rel="noopener noreferrer">
+                Deploy
+              </a>
+            </li>
+          )}
         </S.SectionLinks>
       </S.Container>
     </S.CardContainer>

@@ -1,9 +1,14 @@
 import Card from "../../components/Card";
 import efood from "../../assets/efood.png";
-import apiDjango from "../../assets/api-django-banner.png";
+import apiDjango from "../../assets/api-django.png";
 import cars from "../../assets/cars.png";
-import stockify from "../../assets/stockify.png"
+import stockify from "../../assets/stockify.png";
 import { Container, SectionProjects } from "./styles";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Navigation, Pagination } from "swiper/modules";
 
 const projects = [
   {
@@ -18,11 +23,10 @@ const projects = [
     image: stockify,
     name: "Stockify",
     description:
-      "O Stockify é uma plataforma completa para gerenciamento de estoque, que permite a administração eficiente de produtos, marcas, fornecedores e categorias. A aplicação inclui funcionalidades avançadas como grupos de permissões de usuários, gráficos interativos e uma API pública para integração com outros sistemas. Obs: para acessar o sistema use usuário: userView / senha: view2001",
+      "O Stockify é uma plataforma completa para gerenciamento de estoque, que permite a administração eficiente de produtos, marcas, fornecedores e categorias. A aplicação inclui funcionalidades avançadas como grupos de permissões de usuários, gráficos interativos e uma API pública para integração com outros sistemas.",
     technologies:
-      "Python | Django | DRF | JWT | Bootstrap | AWS | PostgresSQL | Nginx | uWSGI",
-    github: "https://github.com/brenopereira18/inventory_management",
-    deploy: "http://3.220.238.18",
+      "Python | Django | DRF | JWT | Bootstrap | PostgresSQL | Nginx | uWSGI",
+    github: "https://github.com/brenopereira18/inventory_management",    
   },
   {
     image: cars,
@@ -51,18 +55,32 @@ const Project = () => {
       <div className="container">
         <h2>Projetos</h2>
         <SectionProjects>
-          {projects.map((project) => (
-            <Card
-              key={project.name}
-              image={project.image}
-              name={project.name}
-              description={project.description}
-              technologies={project.technologies}
-              github={project.github}
-              deploy={project.deploy}
-            />
-          ))}
-        </SectionProjects>
+          <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={10}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 2 },
+            }}
+            style={{ paddingBottom: "50px" }}
+          >
+            {projects.map((project) => (
+              <SwiperSlide key={project.name}>
+                <Card
+                  key={project.name}
+                  image={project.image}
+                  name={project.name}
+                  description={project.description}
+                  technologies={project.technologies}
+                  github={project.github}
+                  deploy={project.deploy}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </SectionProjects>        
       </div>
     </Container>
   );

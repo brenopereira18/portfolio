@@ -10,10 +10,11 @@ import {
   SiTypescript,
   SiBootstrap,
   SiGrunt,
-  SiDocker,  
+  SiDocker,
   SiDjango,
   SiRedux,
   SiStyledcomponents,
+  SiSpring,
 } from "react-icons/si";
 import { FaGulp, FaGitAlt, FaJava } from "react-icons/fa";
 import * as S from "./styles";
@@ -56,6 +57,7 @@ const skills = [
   { name: "Gulp", icon: FaGulp, color1: "#B3005E", color2: "#FF004D" },
   { name: "Git", icon: FaGitAlt, color1: "#FFB84C", color2: "#F94C10" },
   { name: "Java", icon: FaJava, color1: "#78B3CE", color2: "#FF7F3E" },
+  { name: "Spring", icon: SiSpring, color1: "#5D8736", color2: "#A9C46C" },
 ];
 
 const TechnicalSkills = () => {
