@@ -3,7 +3,6 @@ import { CgMenu, CgFileDocument } from "react-icons/cg";
 import { BsPersonFill } from "react-icons/bs";
 import { AiFillHome } from "react-icons/ai";
 import { BsBriefcaseFill } from "react-icons/bs";
-import { IoClose } from "react-icons/io5";
 import * as S from "./styles";
 
 const Header = () => {
@@ -46,17 +45,10 @@ const Header = () => {
         <S.MenuNav>
           <CgMenu
             size={26}
-            onClick={() => setMenuIsOpen(true)}
+            onClick={() => setMenuIsOpen(!menuIsOpen)}
             color="#a084e8"
           />
-          <S.ItemsLinkMobile className={menuIsOpen ? "is-open" : ""}>
-            <div>
-              <IoClose
-                size={26}
-                color="#021526"
-                onClick={() => setMenuIsOpen(false)}
-              />
-            </div>
+          <S.ItemsLinkMobile className={`${menuIsOpen ? "is-open" : ""} ${isScrolled ? "scrolled" : ""}`}>
             <li>
               <AiFillHome />
               <a href="#inicio">Home</a>

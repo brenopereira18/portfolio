@@ -13,9 +13,8 @@ const About = () => {
           <p>
             Sou um desenvolvedor fullstack com expertise em criar
             microsserviços, automatizar fluxos de trabalho e integrar front-end
-            com back-end. Tenho experiência no desenvolvimento e testes com
-            Django e Postgres, além de construir e consumir APIs robustas.
-            Utilizo abordagens modernas de DevOps, como Docker e CircleCI, para
+            com back-end, além de construir e consumir APIs robustas.
+            Utilizo abordagens modernas de DevOps na implantação de softwares, para
             garantir eficiência e qualidade nas entregas. Minhas habilidades
             também incluem a criação de landing pages atraentes e funcionais,
             utilizando as melhores práticas de design e desenvolvimento web.
