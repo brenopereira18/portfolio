@@ -23,8 +23,8 @@ const About = () => {
             específicas de cada projeto.
           </p>
           <S.Button
-            href="/CV/Curriculo_BrenoPereira.pdf"
-            download="Curriculo_BrenoPereira.pdf"
+            href="/CV/curriculo.pdf"
+            download="curriculo.pdf"
           >
             Baixar CV
             <BsDownload />
