@@ -11,7 +11,7 @@ const About = () => {
         </S.Section>
         <S.SectionAbout>
           <p>
-            Sou um desenvolvedor fullstack com expertise em criar
+            Sou um desenvolvedor Full-Stack com expertise em criar
             microsserviços, automatizar fluxos de trabalho e integrar front-end
             com back-end, além de construir e consumir APIs robustas.
             Utilizo abordagens modernas de DevOps na implantação de softwares, para

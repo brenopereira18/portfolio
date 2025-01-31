@@ -1,7 +1,7 @@
 import Card from "../../components/Card";
 import efood from "../../assets/efood.png";
 import apiDjango from "../../assets/api-django.png";
-import academyCode from "../../assets/api-academy_code.png";
+import academyCode from "../../assets/api-academy-code.png";
 import cars from "../../assets/cars.png";
 import stockify from "../../assets/stockify.png";
 import { Container, SectionProjects } from "./styles";
@@ -14,9 +14,9 @@ import { Navigation, Pagination } from "swiper/modules";
 const projects = [
   {
     image: academyCode,
-    name: "Academy Code",
+    name: "Academy Code - API",
     description:
-      "Criei um gerenciador de cursos de programação que permite organizar e acessar conteúdos de forma prática e eficiente. O sistema conta com três tipos de usuários: 'manager', 'admin' e 'user', cada um com permissões específicas para garantir um controle claro e seguro. Ele oferece um CRUD completo para gerenciar tanto os cursos quanto os usuários e também possibilita filtrar os cursos por categoria, tornando a experiência mais ágil e personalizada.",
+      "Criei uma api que gerencia cursos de programação que permite organizar e acessar conteúdos de forma prática e eficiente. O sistema conta com três tipos de usuários: 'manager', 'admin' e 'user', cada um com permissões específicas para garantir um controle claro e seguro. Ele oferece um CRUD completo para gerenciar tanto os cursos quanto os usuários e também possibilita filtrar os cursos por categoria, tornando a experiência mais ágil e personalizada.",
     technologies:
       "Java| Spring-Boot | Spring-Data | Spring-Security | PostgreSQL | JWT",
     github: "https://github.com/brenopereira18/academy_code",

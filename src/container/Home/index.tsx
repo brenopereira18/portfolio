@@ -31,7 +31,7 @@ const Home = () => {
         </S.SectionFigures>
         <S.Presentation>
           <h2>Olá, meu nome é Breno!</h2>
-          <p>Desenvolvedor FullStack</p>
+          <p>Desenvolvedor Full-Stack</p>
           <S.Button>
             <a href="mailto:devbrenopereira@gmail.com">Envie-me um email</a>
             <BsEnvelopeAt size={20} />
